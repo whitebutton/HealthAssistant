@@ -1,0 +1,19 @@
+<image bindtap="choseStart" wx:if="{{stage==0}}" class="startImg" src="{{img}}"></image>
+<view wx:if="{{stage==1}}">
+  <view wx:for="{{testContent}}" wx:key="key">
+    <view class="choseItem">
+      <view>
+        {{index+1}}.{{item.itemTitle}}
+        <text class="isRadio">{{item.theRadio==1?"（单选）":"（多选）"}}</text>
+      </view>
+      <radio-group bindchange="radioChange" data-index="{{index}}">
+        <label class="oneChose" wx:for="{{item.itemQuestion}}" wx:key="key">
+          <radio value="{{index}}" checked="{{false}}" />
+          <view>{{item}}</view>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <button class="submit" bindtap="submit">提交</button>
+</view>
+<image bindtap="testEnd" wx:if="{{stage==2}}" class="startImg" src="{{endImg}}"></image>

@@ -1,0 +1,50 @@
+.ceOneItem {
+  display: flex;
+  flex-direction: column;
+  margin: 30rpx;
+}
+
+.ceContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ceImage {
+  width: 250rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+}
+
+.ceText {
+  width: 400rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ceDirect {
+  width: 350rpx;
+  display: flex;
+  color: gray;
+  justify-content: space-between;
+}
+
+.ceDirect :last-child {
+  color: blue;
+  background-color: rgb(220,225,255);
+  padding: 5rpx 20rpx;
+  border-radius: 20rpx;
+}
+.tips{
+  margin-top: 100rpx;
+  text-align: center;
+}
+.brLine {
+  height: 2rpx;
+  width: 100%;
+  margin-top: 30rpx;
+  background-color: rgb(233, 233, 233);
+}

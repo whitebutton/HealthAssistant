@@ -1,0 +1,38 @@
+<view class="detial">
+  <view class="property">
+    <view class="propertyText">
+      <view class="firstRow">
+        <view>{{doctorDetial.doctorName}}</view>
+        <view>{{doctorDetial.qualification}}</view>
+      </view>
+      <view class="secRow">
+        <!-- 这里的空格是复制网上的 -->
+        <view>{{doctorDetial.belongHostipal}}　</view>
+        <view>{{doctorDetial.belongDepartment}}</view>
+      </view>
+    </view>
+    <image wx:if="{{doctorDetial.sex=='女'}}" src="../../../images/nvyisheng.png"></image>
+    <image wx:if="{{doctorDetial.sex=='男'}}" src="../../../images/nanyisheng.png"></image>
+  </view>
+  <view class="intorduct">
+    <view>擅长：{{doctorDetial.goodat}}</view>
+    <view>个人简介：{{doctorDetial.introduction}}</view>
+  </view>
+</view>
+
+<view class="appointmentList">
+  <view class="appItem" wx:for="{{appointment}}" wx:key="key" bindtap="toBook" data-index="{{index}}">
+    <view class="appContent">
+      <view class="appTime">
+        <view>{{item.time}}</view>
+        <view>{{item.week}}{{item.amOrPm}}</view>
+      </view>
+      <view class="appTime">
+        <view>普通门诊</view>
+        <view>诊查费<text class="detialMoney">{{item.charge}}</text>元</view>
+      </view>
+      <view class="{{item.isBook?'noBook':'isBook'}}">{{item.isBook?'约满':'预约'}}</view>
+    </view>
+    <view class="brLine"></view>
+  </view>
+</view>

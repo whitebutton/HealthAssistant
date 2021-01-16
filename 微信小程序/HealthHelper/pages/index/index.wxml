@@ -1,0 +1,15 @@
+<view class="content">
+  <view class="backGround">
+    <image class="backImg" src="../../images/headImg.png"></image>
+  </view>
+  <view class="chose">
+    <view class="choseContent" wx:for="{{clickItem}}" wx:key="key" bindtap="gotoDetial" data-index="{{index}}"
+    url="{{item.url}}" open-type="reLaunch">
+      <view class="choseItem">
+        <image src="{{item.img}}"></image>
+        <view>{{item.dec}}</view>
+      </view>
+      <view wx:if="{{index!=3}}" class="brLine"></view>
+    </view>
+  </view>
+</view>

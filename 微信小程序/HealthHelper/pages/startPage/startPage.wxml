@@ -1,0 +1,26 @@
+<view class="starContent">
+  <form bindsubmit="formSubmit">
+    <view class="login">
+      <image class="startImg" src="../../images/login.png"></image>
+      <text class="titleName">健康小助手</text>
+      <view>
+        <view class="loginContent">
+          <view class="loingItem">
+            <image src="../../images/phone.png"></image>
+            <input type="number" maxlength="11" name="userPhone" value="{{form.userPhone}}"
+              placeholder="请输入手机号"></input>
+            <image bindtap="clearInput" wx:if="{{!isPhoneTrue}}" src="../../images/mistake.png" data-name="userPhone">
+            </image>
+          </view>
+          <view class="loingItem">
+            <image src="../../images/verification.png"></image>
+            <input type="number" maxlength="4" name="verif" value="{{form.verif}}" placeholder="请输入验证码"></input>
+            <view class="verif" bindtap="getRandom">获取验证码</view>
+            <image bindtap="clearInput" wx:if="{{!isVerTrue}}" src="../../images/mistake.png" data-name="verif"></image>
+          </view>
+        </view>
+        <button class="loginButton" formType="submit">立即登录</button>
+      </view>
+    </view>
+  </form>
+</view>

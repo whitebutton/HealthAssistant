@@ -1,0 +1,49 @@
+@import "../doctor/doctor.wxss";
+
+.historyItem {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background-color: #F5F5F5;
+}
+
+.hisContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 30rpx;
+  padding: 40rpx;
+  border: 1rpx solid rgb(192, 192, 192);
+  border-radius: 20rpx;
+}
+
+
+.hisDetial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hisDetial image {
+  height: 80rpx;
+  width: 80rpx;
+  margin-bottom: 20rpx;
+}
+.hisDetial text{
+  color: rgb(91, 141, 240);
+}
+.hisText view{
+  margin: 15rpx;
+}
+
+.brLine {
+  height: 2rpx;
+  width: 100%;
+  /* margin-top: 30rpx; */
+  margin-bottom: 30rpx;
+}
+.notHistory{
+  width: 100%;
+  text-align: center;
+}

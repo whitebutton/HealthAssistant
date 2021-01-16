@@ -1,0 +1,92 @@
+.allConent {
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.posterImg {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation {
+  margin: 20rpx 0 20rpx 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navImg {
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.healthKnowledge {
+  position: relative;
+  height: 250rpx;
+  margin-bottom: 20rpx;
+}
+
+.healthKnowledge image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.healthKnowledge text {
+  width: 500rpx;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  color: white;
+}
+
+.healthScience {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.healthScienceItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.newsText{
+  display: flex;
+  justify-content: space-between;
+}
+
+.healthScienceItem image {
+  width: 300rpx;
+  height: 180rpx;
+  margin: 20rpx 20rpx 20rpx 0;
+}
+
+.newsContent {
+  display: flex;
+  padding: 20rpx;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.newsSource {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25rpx;
+  color: rgb(148, 148, 148);
+}
+
+.brLine {
+  height: 2rpx;
+  width: 100%;
+  margin: 20rpx 0 20rpx 0;
+  background-color: rgb(194, 194, 194);
+}

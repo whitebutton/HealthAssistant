@@ -1,0 +1,21 @@
+<view class="rumorContent">
+  <view style="color: white;">题目解析：</view>
+  <view wx:for="{{questions}}" wx:key="key" data-index="{{index}}">
+    <view class="resContent">
+      <view>{{item.title}}</view>
+      <view class="resAnswerText">
+        <view>正确答案：{{item.markstyle=='fake'?'假的':'真的'}}</view>
+        <view class="resAnswer" wx:if="{{item.isAnswerTrue}}">
+          <image src="../../../images/success.png"></image>
+          <text style="color: #68D279;">答对了</text>
+        </view>
+        <view class="resAnswer" wx:if="{{!item.isAnswerTrue}}">
+          <image src="../../../images/mistake.png"></image>
+          <text style="color: #FE6D68;">答错了</text>
+        </view>
+      </view>
+      <text class="url" bindtap="gotoDetil" data-url="{{item.url}}">{{item.url2}}（点击跳转）</text>
+    </view>
+  </view>
+  <view class="notHistory" wx:if="{{questions.length==0}}">当前无答题记录</view>
+</view>

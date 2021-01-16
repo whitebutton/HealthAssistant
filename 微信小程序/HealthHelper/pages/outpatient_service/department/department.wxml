@@ -1,0 +1,17 @@
+<view class="detial">
+  <view class="hostipalName">
+    <view>{{appointment.hostipalName}}</view>
+    <view class="qualification">{{appointment.qualification}}</view>
+  </view>
+  <view class="address">{{appointment.address}}</view>
+</view>
+<view class="brLine"></view>
+<view class="detial">
+  <view>选择科室</view>
+  <view class="roomList">
+    <view class="roomItem" bindtap="gotoDoctor" wx:for="{{departRoom}}" wx:key="key" data-index="{{index}}">
+      <image src="{{item.img}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>

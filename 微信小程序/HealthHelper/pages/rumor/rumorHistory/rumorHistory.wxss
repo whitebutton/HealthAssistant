@@ -1,0 +1,41 @@
+@import "../rumTest/runTest.wxss";
+
+.resContent {
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20rpx;
+  margin: 20rpx 0;
+  padding: 20rpx;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.resContent image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.resAnswerText {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20rpx 0;
+}
+
+.resAnswer {
+  display: flex;
+  align-items: center;
+}
+
+.url {
+  color: rgb(190, 190, 190);
+}
+
+.notHistory {
+  width: 100%;
+  text-align: center;
+}

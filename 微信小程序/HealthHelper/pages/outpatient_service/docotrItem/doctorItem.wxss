@@ -1,0 +1,96 @@
+.detial {
+  padding: 50rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.property {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.property image {
+  width: 25%;
+  height: 150rpx;
+}
+
+.propertyText {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstRow {
+  display: flex;
+  margin-bottom: 20rpx;
+  align-items: flex-end;
+}
+
+.firstRow :first-child {
+  font-size: 50rpx;
+}
+
+.firstRow :last-child {
+  height: 40rpx;
+  margin-left: 30rpx;
+  background-color: rgb(253, 211, 211);
+  color: rgb(255, 0, 0);
+  padding: 0 10rpx 0 10rpx;
+  font-size: 25rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+
+.secRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brLine {
+  height: 2rpx;
+  width: 100%;
+  /* margin-top: 30rpx;
+  margin-bottom: 30rpx; */
+  background-color: rgb(194, 194, 194);
+}
+
+.appItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.appContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30rpx;
+  font-size: 25rpx;
+}
+
+.appTime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detialMoney {
+  color: rgb(255, 125, 13);
+}
+
+.isBook {
+  padding: 10rpx 30rpx;
+  background-color: rgb(91, 141, 240);
+  color: white;
+  border-radius: 10rpx;
+}
+
+.noBook {
+  padding: 10rpx 30rpx;
+  background-color: rgb(212, 212, 212);
+  color: white;
+  border-radius: 10rpx;
+}

@@ -1,0 +1,39 @@
+<view class="allConent">
+  <!-- 海报 -->
+  <swiper autoplay="true" interval="4000" duration="500" circular="true">
+    <view wx:for="{{posterImg}}" wx:key="key" >
+      <swiper-item bindtap="goToImg">
+        <image class="posterImg" data-id="{{index}}" src="{{item.img}}"></image>
+      </swiper-item>
+    </view>
+  </swiper>
+  <!-- 导航栏 -->
+  <view class="navigation">
+    <navigator wx:for="{{navigation}}" wx:key="key" class="navItem" bindtap="goToPart" data-index="{{index}}"
+      open-type="switchTab" url="{{item.url}}">
+      <image class="navImg" src="{{item.img}}"></image>
+      <text>{{item.text}}</text>
+    </navigator>
+  </view>
+  <!-- 健康小知识 -->
+  <view class="healthKnowledge">
+    <image src="../../images/helthBg.jpg"></image>
+    <text>{{healthKnowedge}}</text>
+  </view>
+  <!-- 健康科普 -->
+  <view class="healthScience">
+    <view wx:for="{{healthNews}}" wx:key="key" class="healthScienceItem" bindtap="newsDetial" data-index="{{index}}">
+      <view class="newsText">
+        <image src="{{item.picUrl}}"></image>
+        <view class="newsContent">
+          <text>{{item.title}}</text>
+          <view class="newsSource">
+            <text>{{item.description}}</text>
+            <text>{{item.ctime}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="brLine"></view>
+    </view>
+  </view>
+</view>

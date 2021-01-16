@@ -1,0 +1,18 @@
+<view class="allConent">
+  <!-- 健康科普 -->
+  <view class="healthScience">
+    <view wx:for="{{healthNews}}" wx:key="key" class="healthScienceItem" bindtap="newsDetial" data-index="{{index}}">
+      <view class="newsText">
+        <image src="{{item.picUrl}}"></image>
+        <view class="newsContent">
+          <text>{{item.title}}</text>
+          <view class="newsSource">
+            <text>{{item.description}}</text>
+            <text>{{item.ctime}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="brLine"></view>
+    </view>
+  </view>
+</view>

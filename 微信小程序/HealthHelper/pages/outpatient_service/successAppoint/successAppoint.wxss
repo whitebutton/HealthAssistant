@@ -1,0 +1,29 @@
+@import "../appointmentInfo/appoingmentInfo.wxss";
+.appInfo{
+  display: flex;
+  align-items: center;
+}
+.appInfo image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.successful{
+  font-size: 50rpx;
+}
+.bookNum{
+  color: rgb(175, 175, 175);
+}
+.tips{
+  font-size: 40rpx;
+  color: red;
+}
+.btus{
+  width: 100%;
+  margin-top: 100rpx;
+}
+.subButton {
+  width: 1000rpx;
+  margin-top: 30rpx;
+  background-color: rgb(91, 141, 240);
+  color: white;
+}

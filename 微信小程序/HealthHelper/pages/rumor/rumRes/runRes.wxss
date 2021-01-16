@@ -1,0 +1,30 @@
+@import "../rumTest/runTest.wxss";
+
+.rumorContent {
+  height: 100%;
+  position: relative;
+  padding: 0;
+}
+.textContent{
+  position: absolute;
+  width: 80%;
+  height: 40%;
+  top: 22%;
+  left: 7%;
+  display: flex;
+  justify-content: space-around;
+}
+.textContent image {
+  width: 200rpx;
+  height: 200rpx;
+}
+.tips{
+  margin: 20rpx;
+  color: gray;
+}
+.buttonGroup :last-child{
+  background-color:#8BC34A;
+  color: white;
+  padding: 15rpx 50rpx;
+  border-radius: 50rpx;
+}

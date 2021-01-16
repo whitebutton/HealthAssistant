@@ -1,0 +1,22 @@
+<view class="content">
+  <view class="appInfo">
+    <view class="appInfoTitle">预约信息</view>
+    <view>预约医生：{{hosInfo.doctorName}}（{{hosInfo.belongDepartment}}）</view>
+    <view>预约医院：{{hosInfo.belongHostipal}}</view>
+    <view>预约时间：{{timeInfo.time}}{{timeInfo.week}}{{timeInfo.amOrPm}}</view>
+  </view>
+  <form class="appForm" bindsubmit="formSubmit">
+    <view class="appInfo">
+      <view class="appInfoTitle">患者资料</view>
+      <view>患者姓名：<input maxlength="6" type="text" name='patientName' value="{{form.patientName}}" placeholder="请输入姓名"></input></view>
+      <view>手机号码：{{form.patientPhone}}（默认帐号）</view>
+      <view>身份证号：<input maxlength="18" type="text" name='patientIdCard' value="{{form.patientIdCard}}" placeholder="请输入身份证号码"></input>
+      </view>
+    </view>
+    <view class="appTips">
+      <view>普通门诊：挂号费</view>
+      <view> <text class="detialMoney">50</text>元（到院付）</view>
+    </view>
+    <button class="subButton" formType="submit">立即预约</button>
+  </form>
+</view>

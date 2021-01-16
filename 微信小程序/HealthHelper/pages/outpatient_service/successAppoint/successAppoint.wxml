@@ -1,0 +1,16 @@
+<view class="content">
+  <view class="appInfo">
+    <image src="../../../images/dui.png"></image>
+    <view class="successful">预约成功</view>
+    <view class="successful">就诊码：{{appointNum}}</view>
+    <view class="bookNum">订单编号：{{orderNum}}</view>
+  </view>
+  <view class="tips">温馨提示：</view>
+  <view class="tipstext">1.如无法按时就诊，请在系统提示就诊时间前取消
+    预约。2.若需打印发票，待就诊完毕后可到门诊挂号
+    （缴费窗口出示身份证补打发票）。</view>
+  <view class="btus">
+    <button class="subButton" bindtap="gotoDetial">预约详情</button>
+    <button class="subButton" bindtap="gotoHistory">预约历史</button>
+  </view>
+</view>

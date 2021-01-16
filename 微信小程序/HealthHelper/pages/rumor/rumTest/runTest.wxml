@@ -1,0 +1,40 @@
+<view wx:for="{{newslist}}" wx:key="key" data-index="{{index}}">
+  <view class="rumorContent" wx:if="{{index==currQuestion}}">
+    <view class="textContent" >
+      <view>第{{currQuestion+1}}题 共三题</view>
+      <image src="{{item.imgsrc}}"></image>
+      <view class="testTitle">{{item.title}}
+        <view wx:if="{{showAnswer}}">
+          <view animation="{{textAnimation}}" wx:if="{{item.markstyle!='fake'}}" class="isTrue">真的</view>
+          <view animation="{{textAnimation}}" wx:if="{{item.markstyle=='fake'}}" class="isFalse">假的</view>
+        </view>
+      </view>
+      <view class="buttonGroup" wx:if="{{!showAnswer}}" bindtap="showAsnwer">
+        <view data-isRealy="true">真的</view>
+        <view data-isRealy="false">假的</view>
+      </view>
+      <view wx:if="{{showAnswer}}">
+        <view class="answerButton">
+          <view wx:if="{{isAnswerTrue}}">
+            <image src="../../../images/happy.png"></image>
+            <text>答对啦！</text>
+          </view>
+          <view wx:if="{{!isAnswerTrue}}">
+            <image src="../../../images/sad.png"></image>
+            <text>答错啦！</text>
+          </view>
+          <view class="nextQuestion" wx:if="{{!isDealy}}" bindtap="nextQuestion">{{isEnd==false?"下一题":"完成"}}</view>
+          <view wx:if="{{isDealy}}">{{second}}s</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="answerContent"  wx:if="{{index==currQuestion}}">
+    <view>题目解析：</view>
+    <view class="lock" wx:if="{{!showAnswer}}">
+      <image src="../../../images/suo.png"></image>
+      <view>答完即可解锁解析并可进入下一题</view>
+    </view>
+    <view wx:if="{{showAnswer}}" class="answerDec">{{item.desc}}</view>
+  </view>
+</view>

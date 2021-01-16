@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/startPage/startPage",
+    "pages/index/index",
+    "pages/rumor/rumTest/runTest",
+    "pages/rumor/rumRes/runRes",
+    "pages/home/home",
+    "pages/outpatient_service/appointHistory/appointHistory",
+    "pages/rumor/rumorHistory/rumorHistory",
+    "pages/outpatient_service/hospital/hospital",
+    "pages/news/news",
+    "pages/mentality/mentality/mentality",
+    "pages/outpatient_service/appointDetial/appointDetial",
+    "pages/outpatient_service/successAppoint/successAppoint",
+    "pages/outpatient_service/docotrItem/doctorItem",
+    "pages/outpatient_service/doctor/doctor",
+    "pages/outpatient_service/department/department",
+    "pages/webPage/webPage",
+    "pages/logs/logs",
+    "pages/outpatient_service/appointmentInfo/appoingmentInfo",
+    "pages/mentality/testList/testList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5B8DF0",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/navBar/shouye2.png",
+        "selectedIconPath": "images/navBar/shouye1.png"
+      },
+      {
+        "pagePath": "pages/outpatient_service/hospital/hospital",
+        "text": "门诊",
+        "iconPath": "images/navBar/menzheng2.png",
+        "selectedIconPath": "images/navBar/menzheng1.png"
+      },
+      {
+        "pagePath": "pages/mentality/mentality/mentality",
+        "text": "心理",
+        "iconPath": "images/navBar/xinli2.png",
+        "selectedIconPath": "images/navBar/xinli1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/navBar/wode2.png",
+        "selectedIconPath": "images/navBar/wode1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

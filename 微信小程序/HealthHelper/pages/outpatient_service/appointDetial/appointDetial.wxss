@@ -1,0 +1,4 @@
+@import "../appointmentInfo/appoingmentInfo.wxss";
+.subButton{
+  margin-top: 10rpx;
+}

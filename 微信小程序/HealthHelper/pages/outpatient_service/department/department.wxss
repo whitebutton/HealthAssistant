@@ -1,0 +1,43 @@
+.detial {
+  padding: 40rpx;
+}
+
+.hostipalName {
+  display: flex;
+}
+
+.qualification {
+  margin-left: 30rpx;
+  background-color: rgb(255, 239, 187);
+  color: rgb(255, 165, 13);
+  padding: 0 10rpx 0 10rpx;
+}
+
+.address {
+  margin-top: 20rpx;
+  color: gray;
+}
+
+.brLine {
+  height: 2rpx;
+  width: 100%;
+  background-color: rgb(194, 194, 194);
+}
+
+.roomList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.roomItem{
+  width: 25%;
+  text-align: center;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  margin: 20rpx 0 30rpx 0;
+}
+.roomItem image{
+  width: 100rpx;
+  height: 100rpx;
+}

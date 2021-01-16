@@ -1,0 +1,20 @@
+<view class="content">
+  <!-- 搜索框 -->
+  <view class="search">
+    <input class="inputBack" bindinput="bindKeyInput" placeholder="输入医院名称" maxlength="20">{{hosName}}</input>
+    <image src="../../../images/sousuo.png" bindtap="search"></image>
+  </view>
+  <!-- 医院列表 -->
+  <view class="hostipalList">
+    <view class="hostipalItem" wx:for="{{hostipalList}}" wx:key="key" bindtap="gotoDetial" data-index="{{index}}">
+      <view class="hostipalContent">
+        <image src="../../../images/hostipal/yiyuan1.jpg"></image>
+        <view class="hostipalText">
+          <text>{{item.hostipalName}}</text>
+          <text class="hostipalAddress">{{item.shortAddress}}</text>
+        </view>
+      </view>
+      <view class="brLine"></view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<view class="rumorContent">
+  <view class="textContent">
+    <image src="../../../images/handclap.png"></image>
+    <view>今日答对{{resNum}}题</view>
+    <view>共耗时：{{time}}s</view>
+    <view class="buttonGroup">
+      <view bindtap="goToHistory">答题记录</view>
+      <view bindtap="goToNews">更多科普</view>
+    </view>
+    <view class="tips">每天 0:00更新题目</view>
+  </view>
+</view>

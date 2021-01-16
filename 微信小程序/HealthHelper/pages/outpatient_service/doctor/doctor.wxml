@@ -1,0 +1,13 @@
+<view class="doctorList">
+  <view class="doctorItem" wx:for="{{doctorList}}" wx:key="key" bindtap="gotoDetial" data-index="{{index}}">
+    <image wx:if="{{item.sex=='女'}}" src="../../../images/nvyisheng.png"></image>
+    <image wx:if="{{item.sex=='男'}}" src="../../../images/nanyisheng.png"></image>
+    <view class="doctorText">
+      <view class="doctorTitle">
+        <view class="name">{{item.doctorName}}</view>
+        <view class="qua">{{item.qualification}}</view>
+      </view>
+      <text class="intrduct">擅长：{{item.shortGood}}</text>
+    </view>
+  </view>
+</view>
